@@ -1,6 +1,6 @@
 <?php
 /*
-    Problem: Circle Area
+    Problem: Area Of Circle
 
     Description:
     Given a number R, calculate the area of a circle using the formula:
