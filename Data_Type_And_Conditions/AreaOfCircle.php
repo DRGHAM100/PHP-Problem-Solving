@@ -30,4 +30,4 @@ $pi = 3.141592653;
 $result = $pi * pow($r, 2);
 
 // Print the result with 9 digits after decimal
-echo number_format($result, 9) . PHP_EOL;
+echo number_format($result, 9, '.', '') . PHP_EOL;
