@@ -40,7 +40,8 @@
     IS DIGIT
 */
 
-// Read character
+// First Solution
+
 $x = readline();
 
 if (is_numeric($x)) {
@@ -53,4 +54,24 @@ if (is_numeric($x)) {
     } elseif (ctype_lower($x)) {
         echo "IS SMALL";
     }
+}
+
+// Second Solution
+
+$x = readline();
+
+// Get ASCII code
+$ascii = ord($x);
+
+if ($ascii >= 48 && $ascii <= 57) {
+    // 0–9
+    echo "IS DIGIT";
+} elseif ($ascii >= 65 && $ascii <= 90) {
+    // A–Z
+    echo "ALPHA" . PHP_EOL;
+    echo "IS CAPITAL";
+} elseif ($ascii >= 97 && $ascii <= 122) {
+    // a–z
+    echo "ALPHA" . PHP_EOL;
+    echo "IS SMALL";
 }
